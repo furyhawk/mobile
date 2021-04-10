@@ -8,13 +8,14 @@ const NoteView = styled.ScrollView`
   padding: 10px;
 `;
 
-const Note = props => {
-  
+const Note = ({ note }) => {
   return (
     <NoteView>
       <Text>
-        {props.note.content}
+        Note by {note.author.username} / Published{' '}
+        {format(new Date(note.createdAt), 'MMM do yyyy')}
       </Text>
+      <Markdown>{note.content}</Markdown>
     </NoteView>
   );
 };
