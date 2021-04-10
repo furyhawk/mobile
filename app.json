@@ -21,6 +21,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "io.furyhawk.notedly",
       "adaptiveIcon": {
         "foregroundImage": "./assets/custom/icon.png",
         "backgroundColor": "#4A90E2"
